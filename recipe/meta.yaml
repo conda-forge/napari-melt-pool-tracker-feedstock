@@ -1,13 +1,13 @@
 {% set name = "napari-melt-pool-tracker" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-melt-pool-tracker-{{ version }}.tar.gz
-  sha256: 8202ef2c0def0727094255adff0a53d548b97ec6d682e23b0d9ba04553d57871
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 947f80d0968f7b521527513a48aa1caa9c518ec42a33129990c03730e71d06cc
 
 build:
   noarch: python
